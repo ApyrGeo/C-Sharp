@@ -124,18 +124,23 @@ Sunt 3 tipuri de funcții ce pot fi executate
   - ExecuteReader() pentru funcții SQL care returnează ma multe valoari
 Implementare:
 ```cs
-SqlCommand inserare= new SqlCommand("",con); //intre "" se trece functia corespunzatoare din SQL pentru inserare
+SqlCommand inserare= new SqlCommand("",con); 
+//intre "" se trece functia corespunzatoare din SQL pentru inserare
 inserare.ExecuteNonQuery();
  
-SqlCommand stergere = new SqlCommand("",con); //intre "" se trece functia corespunzatoare din SQL pentru stergere
+SqlCommand stergere = new SqlCommand("",con); 
+//intre "" se trece functia corespunzatoare din SQL pentru stergere
 stergere.ExecuteNonQuery();
   
-SqlCommand modificare = new SqlCommand("",con); //intre "" se trece functia corespunzatoare din SQL pentru modificare (updatare)
+SqlCommand modificare = new SqlCommand("",con); 
+//intre "" se trece functia corespunzatoare din SQL pentru modificare (updatare)
 modificare.ExecuteNonQuery();
 ```
 ```cs
-SqlCommand selectare = new SqlCommand("",con); //intre "" se trece functia corespunzatoare din SQL pentru selectarea unei valori
-tip_variabila x= (tip_variabila)selectare.ExecuteScalar() ; // în funcție de ce valori se returnează (vezi Concepte noi C#, Variabile noi)
+SqlCommand selectare = new SqlCommand("",con); 
+//intre "" se trece functia corespunzatoare din SQL pentru selectarea unei valori
+tip_variabila x= (tip_variabila)selectare.ExecuteScalar() ; 
+// în funcție de ce valori se returnează (vezi Concepte noi C#, Tipuri variabile si Functii de baza)
 tip_variabila x= Convert.ToTipVariabila(selectare.ExecuteScalar()) ;
   
   
@@ -144,7 +149,8 @@ int x=(int)selectare.ExecuteScalar();
 string y=Convert.ToString(selectare.ExecuteScalar());
 ```
 ```cs
-SqlCommand selectare = new SqlCommand("",con); //intre "" se trece functia corespunzatoare din SQL pentru selectarea a mai multor valori
+SqlCommand selectare = new SqlCommand("",con); 
+//intre "" se trece functia corespunzatoare din SQL pentru selectarea a mai multor valori
 SqlDataReader read = selectare.ExecuteReader();
 while(read.Read())
 {
