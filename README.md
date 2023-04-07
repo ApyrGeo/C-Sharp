@@ -18,7 +18,7 @@
     - Form 
       - Deschiderea unui nou Form
     - PictureBox
-      -Desenarea pe imagini
+      - Desenarea pe imagini
     - ComboBox
     - DateTimePicker
     - Timer
@@ -271,4 +271,125 @@ Fiecare obiect (inclusiv formular) are o serie de proprietăți sau acțiuni ce 
   - MouseHover (daca cursorul este peste obiect)
   - MouseLeave (opusul MouseHover - daca cursorul pleacă de pe obiect)
  
-  
+### Obiecte Toolbox
+#### Label
+Zonă unde se introduce text indirect (prin funcții și nu de la tastatura utilizatorului).
+
+Funcții:
+```cs
+string a=label1.Text; //valoarea din label
+label1.Text="Ceva"; //schimbare valoare label
+```
+
+#### TextBox
+Zonă unde se poate introduce text direct (prin funcții și de la tastatura utilizatorului).
+
+Funcții:
+```cs
+string a=textBox1.Text; //valoarea din label
+textBox1.Text="Ceva"; //schimbare valoare label
+```
+Event:
+- TextChanged: se creează funcția:
+```cs 
+textBox1_TextChanged(object sender, EventArgs e)
+{
+  //cod
+}
+```
+
+#### Button
+Buton ce poate fi apăsat.
+
+Event:
+- MouseClick: se creează funcția:
+```cs 
+button1_MouseClick(object sender, EventArgs e)
+{
+  //cod
+}
+```
+
+#### Form
+Se poate creea un nou Form din Solution Explorer, click dreapta pe numele proiectului, Add, Form (Windows Forms)
+
+Funcții:
+- Deschiderea unui Form creat (de ex. cu numele standard Form2/Form3/...)
+```cs
+Form2 nume=new Form2();
+nume.ShowDialog();
+```
+> Se utilizează numele frm2/frm3/... pentru a ușuara procesul
+
+> În cazul în care se creează o variabilă **publică** în interiorul clasei Form2/Form3/... și se creează astfel un obiect frm2/frm3/..., variabila poate fi accesată din alt Form folosind: var x=frm2.nume_variabila/frm3.nume_variabila/...;
+
+- Deschiderea unui Form creat și închiderea celui precedent
+```cs
+Form2 nume=new Form2();
+this.Hide();
+nume.ShowDialog();
+this.Close();
+//In aceasta ordine
+```
+
+#### PictureBox
+Chenar unde se inserează o imagine.
+
+Funcții:
+```cs
+pictureBox1.BackgroundImage= Image.FromFile(@""); //intre "" se pune adresa imaginii de fundal
+pictureBox1.Image= Image.FromFile(@""); //intre "" se pune adresa imaginii
+
+pictureBox1.Refresh();
+
+float x=pictureBox1.Width //lungimea imaginii
+float y=pictureBox1.Heigth //latimea(inaltimea) imaginii
+float x=pictureBox1.BackgroundImage.Width //lungimea imaginii de fundal
+float y=pictureBox1.BackgroundImage.Heigth //latimea(inaltimea) imaginii de fundal
+```
+Event:
+
+- MouseClick
+```cs
+pictureBox1_MouseClick(object sender, MouseEventArgs e)
+{
+  float X= e.X; //coordonata x a locului unde s-a apasat click
+  float Y= e.Y; //coordonata y a locului unde s-a apasat click
+}
+```
+> e devine MouseEventArgs și permite memorarea a mai multor informații despre mouse (ex. poziție)
+
+##### Desenarea unor obiecte peste obiecte
+De cele mai multe ori se va desena peste imagini (pictureBox) dar se poate desena și pe alte obiecte.
+
+Pentru pictureBox:
+```cs
+Graphics desen = pictureBox1.CreateGraphics(); //declararea zonei unde se va face desenul
+
+//Reinitializare zona (in functie de cerinta)
+desen.Clear(Color.White);
+pictureBox1.Refresh();
+//
+
+Pen pen= new Pen(Color.Black,2) // poate fi si Color.White/Yellow/Red/... , 2 reprezinta grosimea
+
+//desenare elipsa
+desen.DrawEllipse(pen, x, y, a, b); 
+//deseneaza o elipsa cu dimensiunea a, b (valori modificabile) (a==b -> cerc)
+//in punctul de coordonate x si y al zonei de desen
+
+//desenare string
+desen.DragString (valoare, new Font("Arial",12), new SolidBrush(Color.Red), x, y)
+// valoare= stringul cu valoarea dorita
+// Font(string a,int b): a si b sunt modificabile, in functie de font
+// SolidBrush(Color.c) c poate fi orice culoare standard
+
+//desenare linie
+desen.DrawLine(pen,x1,y1,x2,y2)
+//deseneaza o linie de la punctul A(x1,y1) la B(x2,y2)
+
+//deseneaza patrat
+desen.DrawRectangle(pen, x, y, L, l)
+// x, y coordonate in zona de desenat
+// L, l lungime si latime
+```
