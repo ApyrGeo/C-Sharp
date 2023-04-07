@@ -218,8 +218,8 @@ while((line=citire.ReadLine())!=null){}
 string a="Hello World";
 Console.WriteLine(a); //Hello World
 
-MessageBox.Show("Eroare","Titlu"); // afiseaza un panou (ca o eroare), cu mesajul "Eroare", si titlul (optional) "Titlu"
-MessageBox.Show("Text","Titlu", MessageBoxButtons.YesNo) // panou cu  mesajul "Text", titlul "Titlu" si 2 butoane, Da si Nu
+MessageBox.Show("Eroare","Titlu"); // afiseaza un mesaj, cu textul "Eroare" si titlul (optional) "Titlu"
+MessageBox.Show("Text","Titlu", MessageBoxButtons.YesNo)//panou cu mesajul "Text",titlul "Titlu" si 2 butoane(Da si Nu)
 
 DialogResult a=MessageBox.Show("Text","Titlu", MessageBoxButtons.YesNo);
 if(a==DialogResult.Yes) ... //Se executa lucruri daca se apasa Da
