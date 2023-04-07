@@ -379,7 +379,7 @@ desen.DrawEllipse(pen, x, y, a, b);
 //in punctul de coordonate x si y al zonei de desen
 
 //desenare string
-desen.DragString (valoare, new Font("Arial",12), new SolidBrush(Color.Red), x, y);
+desen.DrawString (valoare, new Font("Arial",12), new SolidBrush(Color.Red), x, y);
 // valoare= stringul cu valoarea dorita
 // Font(string a,int b): a si b sunt modificabile, in functie de font
 // SolidBrush(Color.c) c poate fi orice culoare standard
