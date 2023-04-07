@@ -257,14 +257,14 @@ Fiecare obiect (inclusiv formular) are o serie de proprietăți sau acțiuni ce 
   - Multiline 
   - PasswordChar (se pune caracterul selectat în loc de litere - pentru câmpuri pentru parolă)
   - (Name) (numele obiectului)
-  > Numele obiectului poate fi schibat doar dacă nu există nicio funcție asociată obiectului
+  > Numele obiectului poate fi schimbat doar dacă nu există nicio funcție asociată obiectului
   - Locked (nu permite dimensionarea)
   - Size (width; height)
   - StartPosition (unde se deschide Formul (centru, unde e mouse-ul, etc.)
   - Icon (imagine)
   - Dock (ex. imagine- de care parte a Formului se "prinde" imaginea (Fill-ocupă tot Formul, Left-ocupă partea stângă, dar lasă loc de modificare lungime la dreapta))
 
-În cazul în care se dorește "înregistrarea" unei acțiuni ale unui obiect, se deschide fila Events din partea de sus, de lângă fila deja selectată de proprietăți. Apoi se dă dublu click pe acțiunea dorită și se pune codul dorit în funcția creată automat.
+În cazul în care se dorește "înregistrarea" unei acțiuni a unui obiect, se deschide fila Events din partea de sus, de lângă fila deja selectată de proprietăți. Apoi se dă dublu click pe acțiunea dorită și se pune codul dorit în funcția creată automat.
 
 - Acțiuni frecvente (Events)
   - MouseClick 
@@ -311,7 +311,7 @@ button1_MouseClick(object sender, EventArgs e)
 ```
 
 #### Form
-Se poate creea un nou Form din Solution Explorer, click dreapta pe numele proiectului, Add, Form (Windows Forms)
+Se poate creea un nou Form din Solution Explorer-> click dreapta pe numele proiectului-> Add-> Form (Windows Forms)
 
 Funcții:
 - Deschiderea unui Form creat (de ex. cu numele standard Form2/Form3/...)
@@ -342,10 +342,10 @@ pictureBox1.Image= Image.FromFile(@""); //intre "" se pune adresa imaginii
 
 pictureBox1.Refresh();
 
-float x=pictureBox1.Width //lungimea imaginii
-float y=pictureBox1.Heigth //latimea(inaltimea) imaginii
-float x=pictureBox1.BackgroundImage.Width //lungimea imaginii de fundal
-float y=pictureBox1.BackgroundImage.Heigth //latimea(inaltimea) imaginii de fundal
+float x=pictureBox1.Width; //lungimea imaginii
+float y=pictureBox1.Heigth; //latimea(inaltimea) imaginii
+float x=pictureBox1.BackgroundImage.Width; //lungimea imaginii de fundal
+float y=pictureBox1.BackgroundImage.Heigth; //latimea(inaltimea) imaginii de fundal
 ```
 Event:
 
@@ -379,17 +379,17 @@ desen.DrawEllipse(pen, x, y, a, b);
 //in punctul de coordonate x si y al zonei de desen
 
 //desenare string
-desen.DragString (valoare, new Font("Arial",12), new SolidBrush(Color.Red), x, y)
+desen.DragString (valoare, new Font("Arial",12), new SolidBrush(Color.Red), x, y);
 // valoare= stringul cu valoarea dorita
 // Font(string a,int b): a si b sunt modificabile, in functie de font
 // SolidBrush(Color.c) c poate fi orice culoare standard
 
 //desenare linie
-desen.DrawLine(pen,x1,y1,x2,y2)
+desen.DrawLine(pen,x1,y1,x2,y2);
 //deseneaza o linie de la punctul A(x1,y1) la B(x2,y2)
 
 //deseneaza patrat
-desen.DrawRectangle(pen, x, y, L, l)
+desen.DrawRectangle(pen, x, y, L, l);
 // x, y coordonate in zona de desenat
 // L, l lungime si latime
 ```
