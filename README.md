@@ -5,7 +5,7 @@
 - Baza de date
   - Funcții SQL
   - Implementare C#
-  - Inserare/Stergere/Modificare/Selectare valori din baza de date
+    - Inserare/Stergere/Modificare/Selectare valori din baza de date
 - Concepte noi C#
   - Tipuri variabile
   - Funcții de bază
@@ -21,6 +21,7 @@
       -Desenarea pe imagini
     - ComboBox
     - DateTimePicker
+    - Timer
     - TabControl
     - ProgressBar
     - DataGridView
@@ -97,7 +98,7 @@ SELECT a_1,a_2,...,b_1,b_2,... FROM a INNER JOIN b ON a.a_x=b.b_x;
 - 1 Crearea bazei de date
 
 După crearea proiectului, în meniul **Server Explorer** se va apăsa **Connect to Database**
-În noua fereastră se va selecta pentru **Data source**: **Microsoft SQL Server Database File (SqlClient)**, iar la nume întreaga adresă pâna la folderul **bin\Debug\** al proiectului, urmat de numele bazei de date (cu extensia .mdf)
+În noua fereastră se va selecta pentru **Data source**: **Microsoft SQL Server Database File (SqlClient)**, iar la nume întreaga adresă pâna la folderul **\bin\Debug\** al proiectului, urmat de numele bazei de date (cu extensia .mdf)
 - 2 Crearea tabelelor
 
 Server Explorer -> Nume baza de date -> Tables -> Add new table
@@ -155,4 +156,80 @@ tip_variabila1=read.GetTipVariabila1(0); //ia variabila de pe pozita 0, de tipul
   string y=read.GetString(1);
   Datetime zi=read.GetDateTime(2);
 }
+```
+> Se recomandă folosirea structurii: sqlcommand.Parameters.AddWithValue("nume",valoare1) pentru prima valoare a adresei "nume", iar pentru modificarea ei, sqlcommand.Parameters["nume"]=valoare2;
+
+
+## Concepte noi C#
+### Tipuri variabile
+```cs
+private a   //privat, accesat doar din aceeasi clasa
+public a    //public, accesibil din alte clase
+protected a //protejat, accesibil din alte clase, dar nu si editabil
+// unde a este variabila, functie (private void a(int n)) etc.
+
+int a=1 //integer
+double b=2.43 //double
+string c="aaaa" //string
+
+int[] d; //vector
+int[] d=new int[10] // vector cu 10 elemente
+d[0] //primul element
+
+int[,] e; //matrice
+int[,] e=new int[100,100] //matrice de 100 pe 100
+e[12,12] //elementul de pe linia 12, coloana 12
+
+(int,int,int,...) f; //colectie de valori pentru f
+f.Item1  //primul element
+
+List<(int,double,string,...)> g= new List<(int,double,string,...)>(); //vector(Lista) care stocheaza mai multe valori
+g[0].Item1 //primul termen al primului element din lista
+g[5].Item4 //al patrulea termen al celui de-al saselea element din lista
+g.Add(var1, var2, var3,...) //adaugare elemente in lista
+```
+### Funcții de bază
+```cs
+//CONVERSII
+double a=2.3;
+int b=(int)a;   //Conversie directa
+int b=Convert.ToInt32(a); //Conversie propriu-zisa
+
+string a="23";
+int b=(int)a; //Conversie directa -NU MERGE!!!
+int b=Convert.ToInt32(a) //Conversie propriu-zisa -MERGE
+
+//FUNCTII string
+string a="HAh!aHA";
+int b=a.Lenght;
+string[] c=a.Split('!'); //creeaza vectorul c cu "bucatile" separate din a
+string d=a.Split('!')[0] //d ia valoarea primului string din a, delimitat de caracterul '!'
+
+//CITIRE
+string x=Console.ReadLine(); //citire din consola
+string x=citire.ReadLine(); //citire din fisier text, unde citire este de tip StreamReader
+
+//CITIRE DIN FISIER
+StreamReader citire= new StreamReader("") // intre "" este adresa fisierului
+string line;
+while((line=citire.ReadLine())!=null){}
+
+//AFISARE
+string a="Hello World";
+Console.WriteLine(a); //Hello World
+
+MessageBox.Show("Eroare","Titlu"); // afiseaza un panou (ca o eroare), cu mesajul "Eroare", si titlul (optional) "Titlu"
+MessageBox.Show("Text","Titlu", MessageBoxButtons.YesNo) // panou cu  mesajul "Text", titlul "Titlu" si 2 butoane, Da si Nu
+
+DialogResult a=MessageBox.Show("Text","Titlu", MessageBoxButtons.YesNo);
+if(a==DialogResult.Yes) ... //Se executa lucruri daca se apasa Da
+if(a==DialogResult.No)  ... //Se executa lucruri daca se apasa Nu
+
+FUNCTII DateTime
+DateTime data=DateTime.Now //data curenta
+DateTime data_normala=DateTime.ParseExact(data_ca_la_americani,"M/d/yyyy",CultureInfo.InvariantCulture);
+
+DateTime inceput=...; //o data oarecare
+DateTime final=inceput+TimeSpan.FromDays(30); //returneaza data inceput dupa 30 de zile
+DateTime final2=inceput+TimeSpan.FromHours(1000); //returneaza data inceput dupa 1000 de ore
 ```
