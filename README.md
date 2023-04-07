@@ -11,7 +11,7 @@
   - Funcții de bază
 - Formulare (Forms)
   - Proprietăți
-  - Inserarea obiectelor din meniul Toolbox Funcții ce se execută în funcție de acțiunile utilizatorului (MouseClick, MouseHover, ValueChanged)
+  - Inserarea obiectelor din meniul Toolbox. Funcții ce se execută în funcție de acțiunile utilizatorului (MouseClick, MouseHover, ValueChanged)
     - Label
     - TextBox
     - Button
@@ -117,11 +117,13 @@ con.Close();
 > Pentru realizarea portabilității, în urma primei rulări ale proiectului (după crearea obiectului con și rularea funcției con.Open()), se va modifica adresa din ConnectionString în |DataDirectory|\nume_bazadate.mdf . 
 
 > De exemplu, ConnectionString este **"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Mirel\Desktop\Proiect\bin\Debug\bazadate.mdf;Integrated Security=True;Connect Timeout=30"** și adresa din ConnectionString e **"C:\Users\Mirel\Desktop\Proiect\bin\Debug\bazadate.mdf"**, atunci în urma rulării se va schimba în **"|DataDirectory|\bazadate.mdf"**. 
+
 -  4 Rulare funcții
+
 Sunt 3 tipuri de funcții ce pot fi executate
-  - ExecteNonQuery() pentru funcții SQL care nu returnează valori
-  - ExecuteScalar() pentru funcții SQL care returnează o singură valoare
-  - ExecuteReader() pentru funcții SQL care returnează ma multe valoari
+    - ExecteNonQuery() pentru funcții SQL care nu returnează valori
+    - ExecuteScalar() pentru funcții SQL care returnează o singură valoare
+    - ExecuteReader() pentru funcții SQL care returnează ma multe valoari
 Implementare:
 ```cs
 SqlCommand inserare= new SqlCommand("",con); 
@@ -189,7 +191,7 @@ e[12,12] //elementul de pe linia 12, coloana 12
 (int,int,int,...) f; //colectie de valori pentru f
 f.Item1  //primul element
 
-List<(int,double,string,...)> g= new List<(int,double,string,...)>(); //vector(Lista) care stocheaza mai multe valori
+List<(int,double,string,...)> g= new List<(int,double,string,...)>();//Lista care stocheaza mai multe valori
 g[0].Item1 //primul termen al primului element din lista
 g[5].Item4 //al patrulea termen al celui de-al saselea element din lista
 g.Add(var1, var2, var3,...) //adaugare elemente in lista
@@ -225,7 +227,7 @@ string a="Hello World";
 Console.WriteLine(a); //Hello World
 
 MessageBox.Show("Eroare","Titlu"); // afiseaza un mesaj, cu textul "Eroare" si titlul (optional) "Titlu"
-MessageBox.Show("Text","Titlu", MessageBoxButtons.YesNo)//panou cu mesajul "Text",titlul "Titlu" si 2 butoane(Da si Nu)
+MessageBox.Show("Text","Titlu", MessageBoxButtons.YesNo)//panou cu mesajul "Text",titlul "Titlu" si 2 butoane(Da/Nu)
 
 DialogResult a=MessageBox.Show("Text","Titlu", MessageBoxButtons.YesNo);
 if(a==DialogResult.Yes) ... //Se executa lucruri daca se apasa Da
@@ -239,3 +241,34 @@ DateTime inceput=...; //o data oarecare
 DateTime final=inceput+TimeSpan.FromDays(30); //returneaza data inceput dupa 30 de zile
 DateTime final2=inceput+TimeSpan.FromHours(1000); //returneaza data inceput dupa 1000 de ore
 ```
+## Formulare (Forms)
+Un form poate fi numit o fereastră în care se introduc o serie de obiecte prin care se obțin, se prelucrează și se afișează informații de la/pentru utilizator. Aceste obiecte pot fi căsuțe text, imagini, butoane, diagrame, selectoare valori sau data etc..
+### Proprietăți
+Fiecare obiect (inclusiv formular) are o serie de proprietăți sau acțiuni ce le poate îndeplini
+- Proprietăți generale:
+  - BackgroundImage
+  - BackgroundImageLayout (modul în care se pozitionează imaginea (tile/stretch/center etc.))
+  - Font
+  - ForeColor (culoare text)
+  - Text (valoarea inițială afișată de obiect - ex. Form-> Titlul Formului/ Label -> ce este scris in label)
+  - TextAlign
+  - Enabled (permite accesarea obiectului)(enabled/disabled)
+  - Visible (permite vizualizarea obiectului)(enabled/disabled)
+  - Multiline 
+  - PasswordChar (se pune caracterul selectat în loc de litere - pentru câmpuri pentru parolă)
+  - (Name) (numele obiectului)
+  > Numele obiectului poate fi schibat doar dacă nu există nicio funcție asociată obiectului
+  - Locked (nu permite dimensionarea)
+  - Size (width; height)
+  - StartPosition (unde se deschide Formul (centru, unde e mouse-ul, etc.)
+  - Icon (imagine)
+  - Dock (ex. imagine- de care parte a Formului se "prinde" imaginea (Fill-ocupă tot Formul, Left-ocupă partea stângă, dar lasă loc de modificare lungime la dreapta))
+
+În cazul în care se dorește "înregistrarea" unei acțiuni ale unui obiect, se deschide fila Events din partea de sus, de lângă fila deja selectată de proprietăți. Apoi se dă dublu click pe acțiunea dorită și se pune codul dorit în funcția creată automat.
+
+- Acțiuni frecvente (Events)
+  - MouseClick 
+  - MouseHover (daca cursorul este peste obiect)
+  - MouseLeave (opusul MouseHover - daca cursorul pleacă de pe obiect)
+ 
+  
