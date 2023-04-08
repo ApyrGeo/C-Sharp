@@ -36,6 +36,7 @@ Olimpiada presupune construirea unei aplicații, folosind elemente caracteristic
    > Unele noțiuni de C# pot fi utile în ușurarea procesului de realizare al aplicației
    
 Cerințele respectă o oarecare ordine de rezolvare:
+
 ```mermaid
   graph LR
   A[Cerința1: Baza de date] --> B[Cerința2: Prima Pagină]
@@ -46,9 +47,13 @@ Cerințele respectă o oarecare ordine de rezolvare:
 ```
 ## Baza de date
 ### Funcții SQL
+
 Fiecare cerință necesită utilizarea funcțiilor SQL, chiar și de un număr ridicat de ori.
+
 #### DELETE și TRUNCATE TABLE
+
 Șterg valorile dintr-un tabel:
+
 ```SQL
 DELETE FROM nume_tabel
 TRUNCATE TABLE nume_tabel
@@ -275,6 +280,8 @@ Fiecare obiect (inclusiv formular) are o serie de proprietăți sau acțiuni ce 
 #### Label
 Zonă unde se introduce text indirect (prin funcții și nu de la tastatura utilizatorului).
 
+![](https://social.msdn.microsoft.com/Forums/getfile/153010)
+
 Funcții:
 ```cs
 string a=label1.Text; //valoarea din label
@@ -283,6 +290,8 @@ label1.Text="Ceva"; //schimbare valoare label
 
 #### TextBox
 Zonă unde se poate introduce text direct (prin funcții și de la tastatura utilizatorului).
+
+![](https://i.stack.imgur.com/BcGT6.png)
 
 Funcții:
 ```cs
@@ -301,6 +310,8 @@ private void textBox1_TextChanged(object sender, EventArgs e)
 #### Button
 Buton ce poate fi apăsat.
 
+![](https://i.stack.imgur.com/El2DA.png)
+
 Event:
 - MouseClick: se creează funcția:
 ```cs 
@@ -312,6 +323,8 @@ private void button1_MouseClick(object sender, EventArgs e)
 
 #### Form
 Se poate creea un nou Form din Solution Explorer-> click dreapta pe numele proiectului-> Add-> Form (Windows Forms)
+
+![](https://meeraacademy.com/wp-content/uploads/2022/02/show2.png)
 
 Funcții:
 - Deschiderea unui Form creat (de ex. cu numele standard Form2/Form3/...)
@@ -334,6 +347,8 @@ this.Close();
 
 #### PictureBox
 Chenar unde se inserează o imagine.
+
+![](https://social.microsoft.com/Forums/getfile/15846/)
 
 Funcții:
 ```cs
@@ -402,7 +417,11 @@ Rezumat pași:
   D--x|Executare funcție| A
 ```
 ### ComboBox
+
 Selector al unui element dintr-o listă dată. (Ex. vrei să alegi țara și ți se deschide o listă)
+
+![](https://i.ytimg.com/vi/uUdmtgJBjk4/maxresdefault.jpg)
+
 ```mermaid
 timeline
   title Exemplu
@@ -456,6 +475,8 @@ private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //se sch
 
 Asemănător comboBox-ului. Deschide un mini calendar care permite accesarea unei date.
 
+![](https://d585tldpucybw.cloudfront.net/sfimages/default-source/productsimages/winforms/productitemfeatures/datetimepicker-overview.png?sfvrsn=d7946fb5_1)
+
 Funcții
 ```cs
 DateTime data = dateTimePicker1.Value; // memoreaza data aleasa (zi/luna/an + ora/minut/secunda)
@@ -484,11 +505,167 @@ DateTime format_dorit=DateTime.ParseExact(format_dat, "", CultureInfo.InvariantC
 - mm – Minutes.
 - ss – Seconds.
 - tt - The AM/PM designator.
+
 **EXEMPLU : "MMMM, d, yyyy" (ex. Aprilie, 1, 2023)**
+
 Events
+
 ```cs
 private void dateTimePicker1_ValueChanged(object sender, EventArgs e) //se schimba valoarea
 {
   ...
 }
 ```
+
+### Timer
+
+Timer este un temporizator; execută o acțiune la un interval de timp (tick).
+
+Este atât un obiect din Toolbox, cât și unul declarabil în cod.
+
+Funcții:
+```cs
+Timer timer=new Timer();
+timer.Interval= 1000; // intervalul de timp, in milisecunde (1000 ms= 1 s)
+bool oprit=false;
+timer.Tick += (a,b) => {oprit=true; timer.Stop();}; //functie lambda
+timer.Start();
+while(!oprit)
+{ 
+  Application.DoEvents();
+}
+timer.Stop();
+```
+### TabControl
+
+Obiect care permite vederea a mai multe pagini, în același Form.
+
+Astfel, tabControl va avea proprietățile sale, iar fiecare pagină, separat pe ale ei.
+
+O pagină poate fi adăugată/modificată/ștearsă din: Proprietăți tabControl -> TabPages -> click pe ... (Collection)
+
+Pentru inserare obiecte pe o pagină anume, se va selecta propriu-zis eticheta cu pagina respectivă și se va proceda ca înainte.
+
+![](https://wpf-tutorial.com/Images/ArticleImages/1/chapters/tabcontrol/tabcontrol_simple.png)
+
+Events:
+```cs
+private void tabControl1_SelectedIndexChanged(object sender, EventArgs e) //se schimba de pe o pagina pe alta
+{
+  ...
+}
+```
+
+### ProgressBar
+
+Bară de progres; afișează a x-a parte dintr-un număr y, reprezentând un total (maxim).
+
+![](https://i0.wp.com/codesteps.com/wp-content/uploads/2019/08/progressbar_control_demo.png?fit=350%2C220&ssl=1)
+
+Funcții:
+```cs
+progressBar1.Maximum=y; //valoarea maxima
+progressBar1.Value=x;   //valoarea curenta (<= maxim)
+```
+
+### DataGridView
+
+Obiect care permite observarea unor elemente, sub forma unui tabel.
+
+La început se pot inițializa coloanele cu nume, tip celule(text, button, checkbox, combobox, image, link), din Proprietăți dataGridView -> Columns -> click pe ... (Collection)
+
+![](https://1.bp.blogspot.com/-I2ynfGlaxQM/U2SzaZv-dDI/AAAAAAAAEME/Riw72KwxjSc/s1600/AdvancedDataGridView_sample.jpg)
+
+Funcții:
+```cs
+dataGridView1.Rows.Clear(); //sterge toate liniile
+dataGridView1.Rows.Add(valoare1, valoare2, ...); // adauga valori in functie de cate coloane sunt
+
+dataGridView1.Rows[x].DefaultCellStyle.BackColor =Color.Red;// schimba culoarea liniei cu indicele x
+
+var x=dataGridView1[i,j].Value; // se ia valoarea de pe coloana i-1, linia j-1 (indexare de la 0)
+var y=dataGridView1["Nume",4].Value // se ia valoarea de pa coloana "Nume", linia 3
+```
+
+Events:
+```cs
+ private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e) //se apasa o celula
+{
+  if(e.RonIndex==2){} //verifica daca s-a apasat o celula de pe linia 3
+  if(e.ColumnIndex==3){} //verifica daca s-a apasat o celula de pe coloana 4
+}
+```
+
+### Chart
+
+Grafic care reprezintă vizual anumite seturi de valori.
+
+Fiecare chart e compus dintr-o serie de colecții de valori:
+
+```mermaid
+mindmap
+  root((Chart))
+    Annotations
+      ...
+    ChartAreas
+      Porțiune1 grafic1
+      Porțiune2 grafic2
+      ...
+    Legends
+      Legenda1
+      Legenda2
+      ...
+    Series
+      Seria1 cu anumite puncte care compun graficul
+      Seria2 cu anumite puncte care compun graficul
+      ...
+    Titles
+      Titlu1
+      Titlu2
+      ...
+```
+### Line Chart
+
+![](https://f4n3x6c5.stackpathcdn.com/UploadFile/1e050f/chart-control-in-windows-form-application/Images/image6.png)
+
+Se va creea inițial seria de puncte (ex. "valori").
+
+Seria se poate accesa ori prin nume, ori prin indice (Series["valori"]=Series[0]).
+
+Funcții:
+```cs
+chart1.Series["valori"].Points.Clear();
+chart1.Series["valori"].Points.AddXY(valoare1, valoare2);//valoarea 1 va aparea pe axa OX, iar a doua pe OY
+
+//exemplu
+chart1.Series["valori"].Points.AddXY("Ianuarie",  31);
+//
+
+chart1.ChartAreas[0].AxisY.Title="Titlu"; //punerea unui titlu pt. valorile de pe OY
+chart1.ChartAreas[0].AxisX.Title="Titlu"; //punerea unui titlu pt. valorile de pe OX
+
+chart1.Titles[0].Text="Titlu"; //punerea unui titlu intregului grafic 
+chart1.Legends[0].Title="Titlu"; //punerea unui titlu unei legemde de valori
+```
+
+### Pie Chart
+
+![](https://cdn.ourcodeworld.com/public-media/gallery/gallery-5c7081865ea04.png)
+
+Se va creea inițial seria de puncte (ex. "valori").
+
+Seria se poate accesa ori prin nume, ori prin indice (Series["valori"]=Series[0]).
+
+Funcții:
+```cs
+chart1.Series["valori"].Points.Clear();
+
+chart1.Series["valori"].Points.AddXY(valoare1, valoare2);
+chart1.Series["valori"].Points[x].LegendText= "Text"; //introduce o descriere pentru setul de valori x(indexat de la 0)
+//se introduc n valori in grafic si fiecare are nevoie de o "descriere"
+//ex. zona galbena reprezinta..., in timp ce cea rosie reprezinta...
+
+```
+
+
+
