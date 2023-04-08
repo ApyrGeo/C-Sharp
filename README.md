@@ -245,6 +245,35 @@ DateTime data_normala=DateTime.ParseExact(data_ca_la_americani,"M/d/yyyy",Cultur
 DateTime inceput=...; //o data oarecare
 DateTime final=inceput+TimeSpan.FromDays(30); //returneaza data inceput dupa 30 de zile
 DateTime final2=inceput+TimeSpan.FromHours(1000); //returneaza data inceput dupa 1000 de ore
+
+//functii lambda
+public int suma(int n) //functia normala
+{
+  int s=0;
+  while(n!=0)
+  {
+    s+=n%10;
+    n/=10;
+  }
+  return s;
+}
+
+int v=suma(12332); //apel
+
+int v= (int n) =>  //declarare+apel 
+{
+  int s=0;
+  while(n!=0)
+  {
+    s+=n%10;
+    n/=10;
+  }
+  return s;
+}
+//tipul returnat e dedus automat
+
+//caz general
+var x= (int parametru1, parametru2, ...) => {/*cod*/}
 ```
 ## Formulare (Forms)
 Un form poate fi numit o fereastră în care se introduc o serie de obiecte prin care se obțin, se prelucrează și se afișează informații de la/pentru utilizator. Aceste obiecte pot fi căsuțe text, imagini, butoane, diagrame, selectoare valori sau data etc..
