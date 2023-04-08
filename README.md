@@ -292,7 +292,7 @@ textBox1.Text="Ceva"; //schimbare valoare label
 Event:
 - TextChanged: se creează funcția:
 ```cs 
-textBox1_TextChanged(object sender, EventArgs e)
+private void textBox1_TextChanged(object sender, EventArgs e)
 {
   //cod
 }
@@ -304,7 +304,7 @@ Buton ce poate fi apăsat.
 Event:
 - MouseClick: se creează funcția:
 ```cs 
-button1_MouseClick(object sender, EventArgs e)
+private void button1_MouseClick(object sender, EventArgs e)
 {
   //cod
 }
@@ -351,7 +351,7 @@ Event:
 
 - MouseClick
 ```cs
-pictureBox1_MouseClick(object sender, MouseEventArgs e)
+private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
 {
   float X= e.X; //coordonata x a locului unde s-a apasat click
   float Y= e.Y; //coordonata y a locului unde s-a apasat click
@@ -404,8 +404,91 @@ Rezumat pași:
 ### ComboBox
 Selector al unui element dintr-o listă dată. (Ex. vrei să alegi țara și ți se deschide o listă)
 ```mermaid
+timeline
+  title Exemplu
+  comboBox : Selectare oras
+  Values  : Bucuresti
+          : Iasi
+          : Cluj-Napoca
+          : Timisoara
+          
+  Index   : 0
+          : 1
+          : 2
+          : 3
+          
 ```
 Funcții
 ```cs
-int a=comboBox1.SelectedIndex; 
+int a=comboBox1.SelectedIndex; //memoreaza in a indicele 
+comboBox1.SelectedIndex=(int)b;  //schimba optiunea aleasa cu cea cu indicele b
+
+// exemplu
+if((int)comboBox1.SelectedIndex==0){} 
+
+
+comboBox1.DropDownStyle = ComboBoxStyle.DropDownList; // comboBox needitabil la tastatura
+
+
+comboBox1.Items.Add("");// adaugare optiune (numele intre "")
+
+
+string optiune=comboBox1.SelectedItem; //memoreaza in optiune valoarea aleasa de tip string
+
+// exemplu
+if((string)comboBox1.SelectedItem=="Optiune1"){} 
+
+```
+
+Events
+
+```cs
+private void comboBox1_SelectedValueChanged(object sender, EventArgs e) //se schimba valoarea
+{
+...
+}
+private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //se schimba valoarea
+{
+...
+}
+```
+### DateTimePicker
+
+Asemănător comboBox-ului. Deschide un mini calendar care permite accesarea unei date.
+
+Funcții
+```cs
+DateTime data = dateTimePicker1.Value; // memoreaza data aleasa (zi/luna/an + ora/minut/secunda)
+DateTime data = dateTimePicker1.Value.Date; //memoreaza data aleasa (zi/luna/an)
+
+TimeSpan x=DateTime.Now.TimeOfDay // interval de timp de la 00:00 pana acum
+```
+**În unele cazuri va fi nevoie să moidifcăm formatul în care se stochează valori.
+Acest lucru se poate întâmpla și la inserarea de valori într-o tabelă.**
+```cs
+dateTimePicker1.Format=dateTimePicker.Format.Custom; // modificare format dateTimePicker
+dateTimePicker.CustomFormat ="";
+
+DateTime format_dorit=DateTime.ParseExact(format_dat, "", CultureInfo.InvariantCulture)
+```
+**Între "" se va trece formatul dorit, folosind notațiile:**
+- d - Day of the month.
+- ddd - Short name of day of the week.
+- dddd - Full name of day of the week.
+- M – The month, from 1 through 12.
+- MMM- Short name of Month.
+- MMMM- Long name of the Month.
+- yy - Last two digit if year.
+- yyyy - Full Year.
+- hh – Hour.
+- mm – Minutes.
+- ss – Seconds.
+- tt - The AM/PM designator.
+**EXEMPLU : "MMMM, d, yyyy" (ex. Aprilie, 1, 2023)**
+Events
+```cs
+private void dateTimePicker1_ValueChanged(object sender, EventArgs e) //se schimba valoarea
+{
+  ...
+}
 ```
