@@ -393,3 +393,19 @@ desen.DrawRectangle(pen, x, y, L, l);
 // x, y coordonate in zona de desenat
 // L, l lungime si latime
 ```
+Rezumat pași:
+```mermaid
+  flowchart LR
+  A[Obiect pe care desenezi] --> B[Declarare zonă]
+  B--> C[Construire Pen]
+  C--> D[Construire funcție]
+  D--x|Executare funcție| A
+```
+### ComboBox
+Selector al unui element dintr-o listă dată. (Ex. vrei să alegi țara și ți se deschide o listă)
+```mermaid
+```
+Funcții
+```cs
+int a=comboBox1.SelectedIndex; 
+```
