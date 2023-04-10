@@ -698,7 +698,7 @@ chart1.Series["valori"].Points[x].LegendText= "Text"; //introduce o descriere pe
 
 ```
 
-## RadioButton
+## RadioButton ****UPDATE-10.04.2023****
 
 Căsuță care perminte selectare **unui raspuns** din mai multe. În cazul în care se va selecta alt radioButton, cel din urmă **se va dezactiva**.
 
@@ -710,7 +710,7 @@ bool raspuns=radioButton.Checked; //verifica daca acea casuta e selectata
 radioButton1.Checked=true; //face casuta selectata indiresct, prin cod
 ```
 
-## CheckBox
+## CheckBox ****UPDATE-10.04.2023****
 
 Căsuță care perminte selectarea **mai multe raspunsuri** din mai multe. În cazul în care se va selecta checkBox, cel/cele din urmă **nu se va/vor dezactiva**.
 
