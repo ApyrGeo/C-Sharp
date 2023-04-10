@@ -28,6 +28,8 @@
     - Chart
       - Line Chart
       - Pie Chart
+    - RadioButton __****UPDATE-10.04.2023****
+    - CheckBox _____****UPDATE-10.04.2023****
       
       
 ## Introducere
@@ -696,5 +698,28 @@ chart1.Series["valori"].Points[x].LegendText= "Text"; //introduce o descriere pe
 
 ```
 
+## RadioButton
+
+Căsuță care perminte selectare **unui raspuns** din mai multe. În cazul în care se va selecta alt radioButton, cel din urmă **se va dezactiva**.
+
+![](https://learn.microsoft.com/en-us/windows/apps/design/controls/images/controls/radio-button.png)
+
+Funcții:
+```cs
+bool raspuns=radioButton.Checked; //verifica daca acea casuta e selectata
+radioButton1.Checked=true; //face casuta selectata indiresct, prin cod
+```
+
+## CheckBox
+
+Căsuță care perminte selectarea **mai multe raspunsuri** din mai multe. În cazul în care se va selecta checkBox, cel/cele din urmă **nu se va/vor dezactiva**.
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTefwa0LP2S_XLXxlGvdUtWDFJ0L1ZC8njm3Kn2lFVryGOVsJBQKS8tIFMj2ANp_hDhba8&usqp=CAU)
+
+Funcții:
+```cs
+bool raspuns=checkBox1.Checked; //verifica daca acea casuta e selectata
+checkBox1.Checked=true; //face casuta selectata indiresct, prin cod
+```
 
 
