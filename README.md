@@ -9,6 +9,7 @@
 - Concepte noi C#
   - Tipuri variabile
   - Funcții de bază ..........................****UPDATE-11.04.2023****
+    - Try-Catch ............................****UPDATE-11.04.2023****
 - Formulare (Forms)
   - Proprietăți
   - Inserarea obiectelor din meniul Toolbox. Funcții ce se execută în funcție de acțiunile utilizatorului (MouseClick, MouseHover, ValueChanged)
