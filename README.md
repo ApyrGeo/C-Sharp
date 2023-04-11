@@ -8,7 +8,7 @@
     - Inserare/Stergere/Modificare/Selectare valori din baza de date
 - Concepte noi C#
   - Tipuri variabile
-  - Funcții de bază
+  - Funcții de bază ..........................****UPDATE-11.04.2023****
 - Formulare (Forms)
   - Proprietăți
   - Inserarea obiectelor din meniul Toolbox. Funcții ce se execută în funcție de acțiunile utilizatorului (MouseClick, MouseHover, ValueChanged)
@@ -28,11 +28,11 @@
     - Chart
       - Line Chart
       - Pie Chart
-    - RadioButton _________****UPDATE-10.04.2023****
-    - CheckBox ____________****UPDATE-10.04.2023****
-    - FolderBrowserDialog _****UPDATE-11.04.2023****
-    - ListBox _____________****UPDATE-11.04.2023****
-    - SaveFileDownload_____****Update-11.04.2023****
+    - RadioButton ......................****UPDATE-10.04.2023****
+    - CheckBox ...........................****UPDATE-10.04.2023****
+    - FolderBrowserDialog .....****UPDATE-11.04.2023****
+    - ListBox .................................****UPDATE-11.04.2023****
+    - SaveFileDownload ..........****UPDATE-11.04.2023****
       
       
 ## Introducere
@@ -246,6 +246,7 @@ if(a==DialogResult.No)  ... //Se executa lucruri daca se apasa Nu
 FUNCTII DateTime
 DateTime data=DateTime.Now //data curenta
 DateTime data_normala=DateTime.ParseExact(data_ca_la_americani,"M/d/yyyy",CultureInfo.InvariantCulture);
+// merge dupa includerea: using System.Globalisation;
 
 DateTime inceput=...; //o data oarecare
 DateTime final=inceput+TimeSpan.FromDays(30); //returneaza data inceput dupa 30 de zile
@@ -280,6 +281,51 @@ int v= (int n) =>  //declarare+apel
 //caz general
 var x= (int parametru1, parametru2, ...) => {/*cod*/}
 ```
+UPDATE-11.04.2023
+```cs
+DateTime data=new Convert.ToDateTime("12.12.1994"); //converteste din string in datetime
+
+data=data.AddDays(int i) //modifica data cu cea de peste i zile
+data=data.Add____(double i) //poate fi Years,Months,Days,Hours,Minutes,Seconds...
+
+data.ToString("dd/MM/yyyy") //converteste data in string folosind formatul special
+
+b = read.IsDBNull(1) ? null : read.GetDateTime(1).ToString("dd/MM/yyyy"); 
+//verifica daca o coloana din tabel contine null
+```
+UPDATE-11.04.2023
+
+Expresia try-catch
+
+Se foloseste atunci când o porțiune de cod va da eroare însă se vrea continuarea acestuia, folosind alte funcții. Un exemplu ar fi afișarea/inserarea elementelor dintr-o tabelă care are coloane ce conțin valoarea **null**, într-un obiect. Deși va da eroare când se vor face verificări/operații cu null, ramura catch permite execuția a altor funcții, pentru ca în final să nu apară nicio eroare ce ar opri programul. Astfel, dacă dorim să afișăm valorile într-un DataGridView și dăm de o coloană ce conține null, catch va schimba valoarea inserată în altceva (ex. " ").
+
+Pentru exemplul dat, este o alternativă mai accesibilă pentru funcția .IsDBNull(), însă merge și pe alte cazuri generale.
+```cs
+
+//caz general
+try
+{
+  ....// chestie ce ar putea da eroare
+}
+catch
+{
+  ....// executa .... daca da eroare
+}
+
+// exemplu
+try
+{
+  int id=read.GetInt32(0); //"incearca" operatia de atribuire
+  dataGridView.Add(id,1);
+}
+catch
+{ 
+  int id=0;   //cazul in care read.GetInt32(0) returneaza null
+  dataGridView.Add(id,1);
+}
+```
+
+
 ## Formulare (Forms)
 Un form poate fi numit o fereastră în care se introduc o serie de obiecte prin care se obțin, se prelucrează și se afișează informații de la/pentru utilizator. Aceste obiecte pot fi căsuțe text, imagini, butoane, diagrame, selectoare valori sau data etc..
 ### Proprietăți
