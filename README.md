@@ -28,8 +28,11 @@
     - Chart
       - Line Chart
       - Pie Chart
-    - RadioButton __****UPDATE-10.04.2023****
-    - CheckBox _____****UPDATE-10.04.2023****
+    - RadioButton _________****UPDATE-10.04.2023****
+    - CheckBox ____________****UPDATE-10.04.2023****
+    - FolderBrowserDialog _****UPDATE-11.04.2023****
+    - ListBox _____________****UPDATE-11.04.2023****
+    - SaveFileDownload_____****Update-11.04.2023****
       
       
 ## Introducere
@@ -720,6 +723,52 @@ Funcții:
 ```cs
 bool raspuns=checkBox1.Checked; //verifica daca acea casuta e selectata
 checkBox1.Checked=true; //face casuta selectata indiresct, prin cod
+```
+## FolderBrowserDialog
+
+Obiect care atunci când este apelat, deschide o fereastră care permite alegerea unui folder din tot PC-ul.
+
+Spre deosebire de alte obiecte, el nu va apărea efectiv în Form.
+
+![](https://www.csharp411.com/wp-content/uploads/2010/04/image1.png)
+
+Funcții
+```cs
+if(conditie) folderBrowserDialog1.ShowDialog(); //deschide fereastra de selectie
+string adresa=folderBrowserDialog1.SelectedPath; //memorarea adresei salvate
+```
+
+## ListBox
+
+Chenar unde se pot afișa mai multe valori (liste).
+![](https://social.technet.microsoft.com/wiki/cfs-file.ashx/__key/communityserver-wikis-components-files/00-00-00-00-05/2474.ScreenShot.png)
+
+Funcții:
+```cs
+listBox1.Items.Clear(); //sterge valori
+listbox1.Items.Add(""); //insereaza valori
+listbox1.Items.Count; //numarul de elemente
+
+listBox1.SelectedItem; //obiectul ales de mouse -- concordanta cu EVENTS
+```
+Events:
+```cs
+private void listBox1_MouseClick(object sender, MouseEventArgs e) //mouse-ul atinge o casuta
+{}
+```
+
+## SaveFileDialog
+
+Fereastră care permite salvarea unui fisier, prin deschiderea unei ferestre de selecție a unui folder.
+
+Asemănător folderBrowserDialog, obiectul nu este vizibil în Form.
+
+![](https://f4n3x6c5.stackpathcdn.com/UploadFile/mahesh/savefiledialog-in-C-Sharp/Images/SaveFileDlgImg1.jpg)
+
+Funcții:
+```cs
+saveFileDialog1.FileName = textBox1.Text+".png"; //modificare titlu fisier
+saveFileDialog1.ShowDialog(); //deschiderea ferestrei de salvare
 ```
 
 
