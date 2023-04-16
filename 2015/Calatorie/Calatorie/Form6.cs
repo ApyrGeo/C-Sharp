@@ -25,38 +25,7 @@ namespace Calatorie
         }
         private void init()
         {
-            Graphics desen = pictureBox1.CreateGraphics();
-            //desen.Clear(Color.White);
-            //pictureBox1.Refresh();
-
-            Pen pen = new Pen(Color.Red, 2);
-
-            con.Open();
-
-            SqlCommand select = new SqlCommand($"SELECT Lista_Porturi FROM Croaziere WHERE Id_Croaziera={selectie}", con);
-            string lista = (string)select.ExecuteScalar();
-            select.Dispose();
-            string[] list = lista.Split(' ');
-            float precx = 0, precy = 0;
-            for (int i = 0; i < list.Length; i++)
-            {
-                int curent = Convert.ToInt32((list[i])); 
-                SqlCommand select2 = new SqlCommand($"SELECT Pozitie_X,Pozitie_Y FROM Porturi WHERE IdPort={curent}", con);
-                SqlDataReader read = select2.ExecuteReader();
-                read.Read();
-                float x = (float)read.GetInt32(0);
-                float y = (float)read.GetInt32(1);
-                if (i >= 1)
-                {
-                    desen.DrawLine(pen, precx, precy, x, y);
-                }
-                read.Dispose();
-                precx = x;
-                precy = y;
-
-                desen.DrawRectangle(new Pen(Color.Black,10), x,y, 10, 10);
-            }
-            con.Close();
+            
         }
         private void Form6_Load(object sender, EventArgs e)
         {
@@ -71,6 +40,40 @@ namespace Calatorie
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
             
+        }
+
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            
+
+            Pen pen = new Pen(Color.Red, 2);
+
+            con.Open();
+
+            SqlCommand select = new SqlCommand($"SELECT Lista_Porturi FROM Croaziere WHERE Id_Croaziera={selectie}", con);
+            string lista = (string)select.ExecuteScalar();
+            select.Dispose();
+            string[] list = lista.Split(' ');
+            float precx = 0, precy = 0;
+            for (int i = 0; i < list.Length; i++)
+            {
+                int curent = Convert.ToInt32((list[i]));
+                SqlCommand select2 = new SqlCommand($"SELECT Pozitie_X,Pozitie_Y FROM Porturi WHERE IdPort={curent}", con);
+                SqlDataReader read = select2.ExecuteReader();
+                read.Read();
+                float x = (float)read.GetInt32(0);
+                float y = (float)read.GetInt32(1);
+                if (i >= 1)
+                {
+                    e.Graphics.DrawLine(pen, precx, precy, x, y);
+                }
+                read.Dispose();
+                precx = x;
+                precy = y;
+
+                e.Graphics.DrawRectangle(new Pen(Color.Black, 2), x, y, 10, 10);
+            }
+            con.Close();
         }
     }
 }

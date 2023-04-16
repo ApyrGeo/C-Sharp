@@ -72,8 +72,7 @@ namespace Calatorie
         private int selectie=-1;
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int i=e.RowIndex;
-            selectie = (int)dataGridView1[1, i].Value;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -86,6 +85,12 @@ namespace Calatorie
                 frm6.Show();
                 this.Close();
             }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = e.RowIndex;
+            selectie = (int)dataGridView1[1, i].Value;
         }
     }
 }
