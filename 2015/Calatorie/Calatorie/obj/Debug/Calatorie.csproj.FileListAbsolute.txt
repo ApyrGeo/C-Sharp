@@ -1,0 +1,16 @@
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\bin\Debug\Calatorie.exe.config
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\bin\Debug\Calatorie.exe
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\bin\Debug\Calatorie.pdb
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\obj\Debug\Calatorie.csproj.AssemblyReference.cache
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\obj\Debug\Calatorie.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\obj\Debug\Calatorie.Form1.resources
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\obj\Debug\Calatorie.Form2.resources
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\obj\Debug\Calatorie.Properties.Resources.resources
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\obj\Debug\Calatorie.csproj.GenerateResource.cache
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\obj\Debug\Calatorie.csproj.CoreCompileInputs.cache
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\obj\Debug\Calatorie.exe
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\obj\Debug\Calatorie.pdb
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\obj\Debug\Calatorie.Form3.resources
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\obj\Debug\Calatorie.Form5.resources
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\obj\Debug\Calatorie.Form4.resources
+C:\Users\Sofia\Desktop\C-Sharp-main\2015\Calatorie\Calatorie\obj\Debug\Calatorie.Form6.resources
