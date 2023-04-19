@@ -891,6 +891,18 @@ timeline
   C --> B
   B --> A
 ``` 
+## Menu Strip
+
+O linie care permite inserarea a unor meniuri care pot avea meniuri, care pot avea meniuri...
+
+![](https://i.stack.imgur.com/hINa5.jpg)
+
+Meniurile, submeniurile, sub submeniurile... își pot modifica numele/ alte proprietăți prin click
+
+Event
+
+OnClick....
+
 
 
 
