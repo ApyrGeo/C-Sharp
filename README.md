@@ -297,7 +297,7 @@ data.ToString("dd/MM/yyyy") //converteste data in string folosind formatul speci
 b = read.IsDBNull(1) ? null : read.GetDateTime(1).ToString("dd/MM/yyyy"); 
 //verifica daca o coloana din tabel contine null
 ```
-****UPDATE-11.04.2023****
+#### Try-Catch****UPDATE-11.04.2023****
 
 Expresia try-catch
 
