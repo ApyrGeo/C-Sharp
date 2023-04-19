@@ -520,7 +520,7 @@ private void pictureBox1_Paint(object sender, PaintEventArgs e)
 }
 ```
 
-### ComboBox
+#### ComboBox
 
 Selector al unui element dintr-o listă dată. (Ex. vrei să alegi țara și ți se deschide o listă)
 
@@ -575,7 +575,7 @@ private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //se sch
 ...
 }
 ```
-### DateTimePicker
+#### DateTimePicker
 
 Asemănător comboBox-ului. Deschide un mini calendar care permite accesarea unei date.
 
@@ -621,7 +621,7 @@ private void dateTimePicker1_ValueChanged(object sender, EventArgs e) //se schim
 }
 ```
 
-### Timer
+#### Timer
 
 Timer este un temporizator; execută o acțiune la un interval de timp (tick).
 
@@ -640,7 +640,7 @@ while(!oprit)
 }
 timer.Stop();
 ```
-### TabControl
+#### TabControl
 
 Obiect care permite vederea a mai multe pagini, în același Form.
 
@@ -660,7 +660,7 @@ private void tabControl1_SelectedIndexChanged(object sender, EventArgs e) //se s
 }
 ```
 
-### ProgressBar
+#### ProgressBar
 
 Bară de progres; afișează a x-a parte dintr-un număr y, reprezentând un total (maxim).
 
@@ -672,7 +672,7 @@ progressBar1.Maximum=y; //valoarea maxima
 progressBar1.Value=x;   //valoarea curenta (<= maxim)
 ```
 
-### DataGridView
+#### DataGridView
 
 Obiect care permite observarea unor elemente, sub forma unui tabel.
 
@@ -700,7 +700,7 @@ Events:
 }
 ```
 
-### Chart
+#### Chart
 
 Grafic care reprezintă vizual anumite seturi de valori.
 
@@ -728,7 +728,7 @@ mindmap
       Titlu2
       ...
 ```
-### Line Chart
+#### Line Chart
 
 ![](https://f4n3x6c5.stackpathcdn.com/UploadFile/1e050f/chart-control-in-windows-form-application/Images/image6.png)
 
@@ -752,7 +752,7 @@ chart1.Titles[0].Text="Titlu"; //punerea unui titlu intregului grafic
 chart1.Legends[0].Title="Titlu"; //punerea unui titlu unei legemde de valori
 ```
 
-### Pie Chart
+#### Pie Chart
 
 ![](https://cdn.ourcodeworld.com/public-media/gallery/gallery-5c7081865ea04.png)
 
@@ -771,7 +771,7 @@ chart1.Series["valori"].Points[x].LegendText= "Text"; //introduce o descriere pe
 
 ```
 
-### RadioButton ****UPDATE-10.04.2023****
+#### RadioButton ****UPDATE-10.04.2023****
 
 Căsuță care perminte selectare **unui raspuns** din mai multe. În cazul în care se va selecta alt radioButton, cel din urmă **se va dezactiva**.
 
@@ -783,7 +783,7 @@ bool raspuns=radioButton.Checked; //verifica daca acea casuta e selectata
 radioButton1.Checked=true; //face casuta selectata indiresct, prin cod
 ```
 
-### CheckBox ****UPDATE-10.04.2023****
+#### CheckBox ****UPDATE-10.04.2023****
 
 Căsuță care perminte selectarea **mai multe raspunsuri** din mai multe. În cazul în care se va selecta checkBox, cel/cele din urmă **nu se va/vor dezactiva**.
 
@@ -794,7 +794,7 @@ Funcții:
 bool raspuns=checkBox1.Checked; //verifica daca acea casuta e selectata
 checkBox1.Checked=true; //face casuta selectata indiresct, prin cod
 ```
-### FolderBrowserDialog
+#### FolderBrowserDialog
 
 Obiect care atunci când este apelat, deschide o fereastră care permite alegerea unui folder din tot PC-ul.
 
@@ -808,7 +808,7 @@ if(conditie) folderBrowserDialog1.ShowDialog(); //deschide fereastra de selectie
 string adresa=folderBrowserDialog1.SelectedPath; //memorarea adresei salvate
 ```
 
-### ListBox
+#### ListBox
 
 Chenar unde se pot afișa mai multe valori (liste).
 ![](https://social.technet.microsoft.com/wiki/cfs-file.ashx/__key/communityserver-wikis-components-files/00-00-00-00-05/2474.ScreenShot.png)
@@ -827,7 +827,7 @@ private void listBox1_MouseClick(object sender, MouseEventArgs e) //mouse-ul ati
 {}
 ```
 
-### SaveFileDialog
+#### SaveFileDialog
 
 Fereastră care permite salvarea unui fisier, prin deschiderea unei ferestre de selecție a unui folder.
 
@@ -841,7 +841,7 @@ saveFileDialog1.FileName = textBox1.Text+".png"; //modificare titlu fisier
 saveFileDialog1.ShowDialog(); //deschiderea ferestrei de salvare
 ```
 
-### MdiContainer 
+#### MdiContainer 
 
 Creează o zonă într-un form unde pot fi vizualizate alte formuri.
 
@@ -891,7 +891,7 @@ timeline
   C --> B
   B --> A
 ``` 
-### Menu Strip
+#### Menu Strip
 
 O linie care permite inserarea a unor meniuri care pot avea meniuri, care pot avea meniuri...
 
