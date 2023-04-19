@@ -500,6 +500,26 @@ Rezumat pași:
   C--> D[Construire funcție]
   D--x|Executare funcție| A
 ```
+
+##### Eventul Paint
+Desenează pe un obiect, fără declarare de zona.
+
+Funcționeză când .CreateGraphics nu funcionează.
+
+```cs
+//exemplu pentru pictureBox
+
+private void pictureBox1_Paint(object sender, PaintEventArgs e)
+{
+  Pen pen = new Pen(Color.Red, 2); //standard
+  
+  e.Graphics. DrawLine(Pen, x1,y1,x2,y2);
+            . DrawRectangle(....)
+            . DrawString(....)
+ // e este parametrul care apare la apelarea functiei (...,PaintEventArgs e)
+}
+```
+
 ### ComboBox
 
 Selector al unui element dintr-o listă dată. (Ex. vrei să alegi țara și ți se deschide o listă)
@@ -819,6 +839,28 @@ Funcții:
 ```cs
 saveFileDialog1.FileName = textBox1.Text+".png"; //modificare titlu fisier
 saveFileDialog1.ShowDialog(); //deschiderea ferestrei de salvare
+```
+
+## MdiContainer 
+
+Creează o zonă într-un form unde pot fi vizualizate alte formuri.
+
+![](https://i.ytimg.com/vi/-4EYhC9xDHo/hqdefault.jpg)
+
+Pentru ca un form să fie Mdi Parent(conține zonă pentru vizualizare) se va face true proprietatea IsMdiContainer
+
+Funcții
+```cs
+//Sa zicem ca Form1 e parent si vrem sa vizualizam Form2. Vrem de asemedea sa vedem Form3 in Form1, care se deschide prin Form2
+
+Form2 frm2=new Form2();
+frm2.MdiParent=this; 
+//cum Form2 e deschis direct din Form1, this va fi Form1
+
+Form3 frm3=new Form3();
+frm3.MdiParent=this.MdiParent(); 
+//cum Form3 e deschid din Form2, this.MdiParent va fi parintele Formului din care am deshis
+//(Form1)
 ```
 
 
