@@ -899,6 +899,44 @@ O linie care permite inserarea a unor meniuri care pot avea meniuri, care pot av
 
 Meniurile, submeniurile, sub submeniurile... își pot modifica numele/ alte proprietăți prin click
 
+```mermaid
+mindmap
+  root(menuStrip)
+    meniu 1
+      meniu 1_1
+        meniu 1_1_1
+        meniu 1_1_2
+        ...
+      meniu 1_2
+        meniu 1_2_1
+        meniu 1_2_2
+        ...
+      ...
+    meniu 2
+      meniu 2_1
+        meniu 2_1_1
+        meniu 2_1_2 
+        ...
+      meniu 2_2
+        meniu 2_2_1
+        meniu 2_2_2
+        ...
+      ...
+    meniu 3
+      meniu 3_1
+        meniu 3_1_1
+        meniu 3_1_2 
+        ...
+      meniu 3_2
+        meniu 3_2_1
+        meniu 3_2_2
+        ...
+      ...
+    ...🤓
+        
+      
+```
+
 Event
 
 OnClick....
