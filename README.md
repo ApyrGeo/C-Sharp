@@ -285,7 +285,7 @@ int v= (int n) =>  //declarare+apel
 //caz general
 var x= (int parametru1, parametru2, ...) => {/*cod*/}
 ```
-UPDATE-11.04.2023
+****UPDATE-11.04.2023****
 ```cs
 DateTime data=new Convert.ToDateTime("12.12.1994"); //converteste din string in datetime
 
@@ -297,7 +297,7 @@ data.ToString("dd/MM/yyyy") //converteste data in string folosind formatul speci
 b = read.IsDBNull(1) ? null : read.GetDateTime(1).ToString("dd/MM/yyyy"); 
 //verifica daca o coloana din tabel contine null
 ```
-UPDATE-11.04.2023
+****UPDATE-11.04.2023****
 
 Expresia try-catch
 
@@ -501,7 +501,7 @@ Rezumat pași:
   D--x|Executare funcție| A
 ```
 
-##### Eventul Paint
+##### Eventul Paint ****UPDATE-19.04.2023****
 Desenează pe un obiect, fără declarare de zona.
 
 Funcționeză când .CreateGraphics nu funcionează.
@@ -783,7 +783,7 @@ bool raspuns=radioButton.Checked; //verifica daca acea casuta e selectata
 radioButton1.Checked=true; //face casuta selectata indiresct, prin cod
 ```
 
-#### CheckBox ****UPDATE-10.04.2023****
+#### CheckBox ****UPDATE-10.04.2023**** 
 
 Căsuță care perminte selectarea **mai multe raspunsuri** din mai multe. În cazul în care se va selecta checkBox, cel/cele din urmă **nu se va/vor dezactiva**.
 
@@ -794,7 +794,7 @@ Funcții:
 bool raspuns=checkBox1.Checked; //verifica daca acea casuta e selectata
 checkBox1.Checked=true; //face casuta selectata indiresct, prin cod
 ```
-#### FolderBrowserDialog
+#### FolderBrowserDialog ****UPDATE-11.04.2023****
 
 Obiect care atunci când este apelat, deschide o fereastră care permite alegerea unui folder din tot PC-ul.
 
@@ -808,7 +808,7 @@ if(conditie) folderBrowserDialog1.ShowDialog(); //deschide fereastra de selectie
 string adresa=folderBrowserDialog1.SelectedPath; //memorarea adresei salvate
 ```
 
-#### ListBox
+#### ListBox ****UPDATE-11.04.2023****
 
 Chenar unde se pot afișa mai multe valori (liste).
 ![](https://social.technet.microsoft.com/wiki/cfs-file.ashx/__key/communityserver-wikis-components-files/00-00-00-00-05/2474.ScreenShot.png)
@@ -827,7 +827,7 @@ private void listBox1_MouseClick(object sender, MouseEventArgs e) //mouse-ul ati
 {}
 ```
 
-#### SaveFileDialog
+#### SaveFileDialog ****UPDATE-11.04.2023****
 
 Fereastră care permite salvarea unui fisier, prin deschiderea unei ferestre de selecție a unui folder.
 
@@ -841,7 +841,7 @@ saveFileDialog1.FileName = textBox1.Text+".png"; //modificare titlu fisier
 saveFileDialog1.ShowDialog(); //deschiderea ferestrei de salvare
 ```
 
-#### MdiContainer 
+#### MdiContainer ****UPDATE-19.04.2023****
 
 Creează o zonă într-un form unde pot fi vizualizate alte formuri.
 
@@ -891,7 +891,7 @@ timeline
   C --> B
   B --> A
 ``` 
-#### Menu Strip
+#### Menu Strip ****UPDATE-19.04.2023****
 
 O linie care permite inserarea a unor meniuri care pot avea meniuri, care pot avea meniuri...
 
