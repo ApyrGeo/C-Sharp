@@ -855,12 +855,44 @@ Funcții
 
 Form2 frm2=new Form2();
 frm2.MdiParent=this; 
+frm2.Show(); //!! DOAR Show()
 //cum Form2 e deschis direct din Form1, this va fi Form1
 
 Form3 frm3=new Form3();
 frm3.MdiParent=this.MdiParent(); 
+frm3.Show(); //!! DOAR Show()
 //cum Form3 e deschid din Form2, this.MdiParent va fi parintele Formului din care am deshis
 //(Form1)
+
+this.MdiParent.Close(); //inchide parintele si odata cu el toti "copiii" deschisi
+
+
 ```
+
+```mermaid
+timeline
+
+  title Explicatie
+  Forms : Form1
+        : Form2
+        : Form3
+        : ...
+  Tip   : Parinte (Parent)
+        : Fiu (Child)
+        : Fiu (Child)
+        : ...
+```
+```mermaid
+  flowchart TD
+  A[form1-Parent] ~~~ B[form2.MdiParent=this]
+  B[form2.MdiParent=this] ~~~ C[form3.MdiParent=this]
+  C[form3.MdiParent=this] ~~~ D[form4.MdiParent=this]
+  D --> C
+  C --> B
+  B --> A
+``` 
+
+
+
 
 
