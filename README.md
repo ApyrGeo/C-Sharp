@@ -20,6 +20,7 @@
       - Deschiderea unui nou Form
     - PictureBox
       - Desenarea pe imagini
+        - Eventul Paint ...****UPDATE-19.04.2023****
     - ComboBox
     - DateTimePicker
     - Timer
@@ -34,6 +35,8 @@
     - FolderBrowserDialog .....****UPDATE-11.04.2023****
     - ListBox .................................****UPDATE-11.04.2023****
     - SaveFileDownload ..........****UPDATE-11.04.2023****
+    - Mdi Container ..................****UPDATE-19.04.2023****
+    - MenuStrip ..........................****UPDATE-19.04.2023****
       
       
 ## Introducere
