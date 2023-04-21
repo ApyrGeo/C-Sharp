@@ -37,6 +37,7 @@
     - SaveFileDownload ..........****UPDATE-11.04.2023****
     - Mdi Container ..................****UPDATE-19.04.2023****
     - MenuStrip ..........................****UPDATE-19.04.2023****
+    - OpenFileDialog ................****UPDATE-21.09.2023****
 - Ultimele detalii ...................................****UPDATE-21.09.2023****
       
       
@@ -941,6 +942,13 @@ mindmap
 Event
 
 OnClick....
+
+#### OpenFileDialog
+
+La fel ca la FileBrowserDialog, numai ca selecteaza doar un file, nu un fisier.
+
+![](https://f4n3x6c5.stackpathcdn.com/UploadFile/mahesh/openfiledialog-in-C-Sharp/Images/OpenFileDlgImg1.jpg)
+
 
 ## Ultimele detalii ****UPDATE-21.04.2023****
 
