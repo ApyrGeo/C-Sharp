@@ -1,0 +1,28 @@
+D:\Documents\scr\2013\Puzzle\Puzzle\bin\Debug\Puzzle.exe.config
+D:\Documents\scr\2013\Puzzle\Puzzle\bin\Debug\Puzzle.exe
+D:\Documents\scr\2013\Puzzle\Puzzle\bin\Debug\Puzzle.pdb
+D:\Documents\scr\2013\Puzzle\Puzzle\obj\Debug\Puzzle.csproj.AssemblyReference.cache
+D:\Documents\scr\2013\Puzzle\Puzzle\obj\Debug\Puzzle.csproj.SuggestedBindingRedirects.cache
+D:\Documents\scr\2013\Puzzle\Puzzle\obj\Debug\Puzzle.Form1.resources
+D:\Documents\scr\2013\Puzzle\Puzzle\obj\Debug\Puzzle.Form2.resources
+D:\Documents\scr\2013\Puzzle\Puzzle\obj\Debug\Puzzle.Properties.Resources.resources
+D:\Documents\scr\2013\Puzzle\Puzzle\obj\Debug\Puzzle.csproj.GenerateResource.cache
+D:\Documents\scr\2013\Puzzle\Puzzle\obj\Debug\Puzzle.csproj.CoreCompileInputs.cache
+D:\Documents\scr\2013\Puzzle\Puzzle\obj\Debug\Puzzle.exe
+D:\Documents\scr\2013\Puzzle\Puzzle\obj\Debug\Puzzle.pdb
+D:\Documents\scr\2013\Puzzle\Puzzle\obj\Debug\Puzzle.Form3.resources
+D:\Documents\scr\2013\Puzzle\Puzzle\obj\Debug\Puzzle.Form4.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\bin\Debug\Puzzle.exe.config
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\bin\Debug\Puzzle.exe
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\bin\Debug\Puzzle.pdb
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\obj\Debug\Puzzle.csproj.AssemblyReference.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\obj\Debug\Puzzle.csproj.SuggestedBindingRedirects.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\obj\Debug\Puzzle.Form1.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\obj\Debug\Puzzle.Form2.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\obj\Debug\Puzzle.Form3.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\obj\Debug\Puzzle.Form4.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\obj\Debug\Puzzle.Properties.Resources.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\obj\Debug\Puzzle.csproj.GenerateResource.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\obj\Debug\Puzzle.csproj.CoreCompileInputs.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\obj\Debug\Puzzle.exe
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2013\Puzzle\Puzzle\obj\Debug\Puzzle.pdb
