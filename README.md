@@ -37,6 +37,7 @@
     - SaveFileDownload ..........****UPDATE-11.04.2023****
     - Mdi Container ..................****UPDATE-19.04.2023****
     - MenuStrip ..........................****UPDATE-19.04.2023****
+- Ultimele detalii ...................................****UPDATE-21.09.2023****
       
       
 ## Introducere
@@ -940,6 +941,37 @@ mindmap
 Event
 
 OnClick....
+
+## Ultimele detalii ****UPDATE-21.04.2023****
+
+```cs
+DateTime a=DateTime.Now+TimeSpan.From____(double x)//
+DateTime.ParseExact(string data, "", CultureInfo.InvariantCulture || new CultureInfo("ro-RO"));
+
+//dupa un savefiledialog
+
+StreamWriter write=new StreamWriter(Path.GetFullPath(savefiledialog1.FileName));
+write.Close(); //!!!NEAPARAT
+//dupa un open file dialog
+StreamReader read= new StreamReader(Path.GetFullPath(openfiledialog1.FileName));
+
+Stopwatch t=new Stopwatch;
+t.Start();
+t.Stop();
+t.Elapsed() .Seconds
+            .Miliseconds ...;
+
+//variabile globale, in Program.cs, static class Globals....
+
+List<(int,int)[]> a=new List<(int,int)[]>();
+a.Add(new(int,int)[5]);
+a.Last()[i]=(int x,int y); //ultimul termen
+
+while/if (Application.OpenForms["Form2"] != null)
+{
+  Application.OpenForms["Form2"].Close();
+}
+```
 
 
 
