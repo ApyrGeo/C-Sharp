@@ -39,6 +39,7 @@
     - MenuStrip ..........................****UPDATE-19.04.2023****
     - OpenFileDialog ................****UPDATE-21.09.2023****
 - Ultimele detalii ...................................****UPDATE-21.09.2023****
+- Materie Nationala
       
       
 ## Introducere
@@ -980,8 +981,20 @@ while/if (Application.OpenForms["Form2"] != null)
   Application.OpenForms["Form2"].Close();
 }
 ```
+## Materie Nationala
 
+### Bitmap
+Folositor in salvarea unor imagini, modificate ulterior in program.
 
+Salvarea imaginii cu o portiune din fereastra (creare dimensiune, creare Bitmap, creare zona grafic, copiere:
+```
+            //pz[1] = new Bitmap(width, height);
+                     
+            Rectangle rect = new Rectangle(this.PointToScreen(pictureBox1.Location).X,        this.PointToScreen(pictureBox1.Location).Y, width, height); //dimenziunea "printscreenului"
+            pz[1] = new Bitmap(rect.Width, rect.Height, PixelFormat.Format32bppArgb);
+            Graphics g = Graphics.FromImage(pz[1]);
+            g.CopyFromScreen(rect.Left, rect.Top, 0, 0, pz[1].Size, CopyPixelOperation.SourceCopy);
+```
 
 
 
