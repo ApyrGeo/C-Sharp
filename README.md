@@ -994,7 +994,43 @@ Salvarea imaginii cu o portiune din fereastra (creare dimensiune, creare Bitmap,
             pz[1] = new Bitmap(rect.Width, rect.Height, PixelFormat.Format32bppArgb);
             Graphics g = Graphics.FromImage(pz[1]);
             g.CopyFromScreen(rect.Left, rect.Top, 0, 0, pz[1].Size, CopyPixelOperation.SourceCopy);
+            
+            //sau
+            Bitmap map = new Bitmap(tableLayoutPanel1.Width, tableLayoutPanel1.Height, PixelFormat.Format32bppArgb);
+            tableLayoutPanel1.DrawToBitmap(map, new Rectangle(0,0, tableLayoutPanel1.Size.Width, tableLayoutPanel1.Size.Height));
+            map.Save(@"ContinutLectii\" + textBox1.Text+".bmp");
 ```
+### e.Graphics.DrawImage / g.DrawImage
+
+g.DrawImage(imagine, dreptunghi destinatie, dreptunghi sursa,...)
+
+Destinatia este portiunea din picturebox in care se va desena, in timp ce sursa este bucata de picturebox care se copiaza.
+
+![](https://hangzone.com/wp-content/uploads/2018/07/Red-Yellow-Blue-Rectangle.png)
+
+De exemplu: Dorim mutarea partii albastre in cea rosie. Pictureboxul reprezinta imaginea, sursa este dreptunghiul albastru iar destinatia este cel rosu.
+
+```cs
+g.DrawImage(pictureBox1.BackgroundImage, destinatie, sursa, GraphicsUnit.Pixel);
+```
+
+### Folosire Gradient Path
+
+```cs
+PathGradientBrush brush = new PathGradientBrush(
+                romania.ToArray(),
+                WrapMode.Clamp
+                );
+ColorBlend colorblend=new ColorBlend();
+colorblend.Positions =new float[]{ 0f,0.5f,1.0f};
+colorblend.Colors = new Color[] {Color.Red, Color.Yellow, Color.Blue };
+brush.InterpolationColors = colorblend;
+           
+e.Graphics.FillPolygon(brush, romania.ToArray());          
+```
+
+Pasi: se creeaza obiectul PathGradientPath. Obiectu ColorBlend va memora x culori si x pozitii. Acestea se vor intorduce ulterior in brush, prin .InterpolationColors. In final, poligonul va fi umplut cu forma aleasa.
+
 
 
 
