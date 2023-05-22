@@ -1,0 +1,14 @@
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\bin\Debug\AplicatieBiblioteca.exe.config
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\bin\Debug\AplicatieBiblioteca.exe
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\bin\Debug\AplicatieBiblioteca.pdb
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\obj\Debug\AplicatieBiblioteca.csproj.AssemblyReference.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\obj\Debug\AplicatieBiblioteca.csproj.SuggestedBindingRedirects.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\obj\Debug\AplicatieBiblioteca.Form1.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\obj\Debug\AplicatieBiblioteca.Properties.Resources.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\obj\Debug\AplicatieBiblioteca.csproj.GenerateResource.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\obj\Debug\AplicatieBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\obj\Debug\AplicatieBiblioteca.exe
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\obj\Debug\AplicatieBiblioteca.pdb
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\obj\Debug\AplicatieBiblioteca.Form2.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\obj\Debug\AplicatieBiblioteca.Form3.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2019\AplicatieBiblioteca\AplicatieBiblioteca\obj\Debug\AplicatieBiblioteca.Form4.resources
