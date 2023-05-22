@@ -37,8 +37,8 @@
     - SaveFileDownload ..........****UPDATE-11.04.2023****
     - Mdi Container ..................****UPDATE-19.04.2023****
     - MenuStrip ..........................****UPDATE-19.04.2023****
-    - OpenFileDialog ................****UPDATE-21.09.2023****
-- Ultimele detalii ...................................****UPDATE-21.09.2023****
+    - OpenFileDialog ................****UPDATE-21.04.2023****
+- Ultimele detalii ...................................****UPDATE-21.04.2023****
 - Materie Nationala
       
       
