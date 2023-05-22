@@ -1,0 +1,12 @@
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2012\Tester\Tester\bin\Debug\Tester.exe.config
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2012\Tester\Tester\bin\Debug\Tester.exe
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2012\Tester\Tester\bin\Debug\Tester.pdb
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2012\Tester\Tester\obj\Debug\Tester.csproj.AssemblyReference.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2012\Tester\Tester\obj\Debug\Tester.csproj.SuggestedBindingRedirects.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2012\Tester\Tester\obj\Debug\Tester.Form1.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2012\Tester\Tester\obj\Debug\Tester.Properties.Resources.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2012\Tester\Tester\obj\Debug\Tester.csproj.GenerateResource.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2012\Tester\Tester\obj\Debug\Tester.csproj.CoreCompileInputs.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2012\Tester\Tester\obj\Debug\Tester.exe
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2012\Tester\Tester\obj\Debug\Tester.pdb
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\2012\Tester\Tester\obj\Debug\Tester.Form2.resources

@@ -1,0 +1,13 @@
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2022\Interfate ECO\Interfate ECO\obj\Debug\Interfate ECO.csproj.AssemblyReference.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2022\Interfate ECO\Interfate ECO\obj\Debug\Interfate ECO.csproj.SuggestedBindingRedirects.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2022\Interfate ECO\Interfate ECO\obj\Debug\Interfate_ECO.Form1.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2022\Interfate ECO\Interfate ECO\obj\Debug\Interfate_ECO.Properties.Resources.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2022\Interfate ECO\Interfate ECO\obj\Debug\Interfate ECO.csproj.GenerateResource.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2022\Interfate ECO\Interfate ECO\obj\Debug\Interfate ECO.csproj.CoreCompileInputs.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2022\Interfate ECO\Interfate ECO\bin\Debug\Interfate ECO.exe.config
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2022\Interfate ECO\Interfate ECO\bin\Debug\Interfate ECO.exe
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2022\Interfate ECO\Interfate ECO\bin\Debug\Interfate ECO.pdb
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2022\Interfate ECO\Interfate ECO\obj\Debug\Interfate ECO.exe
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2022\Interfate ECO\Interfate ECO\obj\Debug\Interfate ECO.pdb
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2022\Interfate ECO\Interfate ECO\obj\Debug\Interfate_ECO.Form2.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2022\Interfate ECO\Interfate ECO\obj\Debug\Interfate_ECO.Form3.resources

@@ -1,0 +1,16 @@
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\bin\Debug\Turismul de pretutindeni.exe.config
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\bin\Debug\Turismul de pretutindeni.exe
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\bin\Debug\Turismul de pretutindeni.pdb
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\obj\Debug\Turismul de pretutindeni.csproj.AssemblyReference.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\obj\Debug\Turismul de pretutindeni.csproj.SuggestedBindingRedirects.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\obj\Debug\Turismul_de_pretutindeni.Form1.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\obj\Debug\Turismul_de_pretutindeni.Properties.Resources.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\obj\Debug\Turismul de pretutindeni.csproj.GenerateResource.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\obj\Debug\Turismul de pretutindeni.csproj.CoreCompileInputs.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\obj\Debug\Turismul de pretutindeni.exe
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\obj\Debug\Turismul de pretutindeni.pdb
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\obj\Debug\Turismul_de_pretutindeni.Form2.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\obj\Debug\Turismul_de_pretutindeni.Form3.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\obj\Debug\Turismul_de_pretutindeni.Form4.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\obj\Debug\Turismul_de_pretutindeni.Form5.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\2017\Turismul de pretutindeni\Turismul de pretutindeni\obj\Debug\Turismul_de_pretutindeni.Form6.resources
