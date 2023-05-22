@@ -1029,7 +1029,7 @@ brush.InterpolationColors = colorblend;
 e.Graphics.FillPolygon(brush, romania.ToArray());          
 ```
 
-Pasi: se creeaza obiectul PathGradientPath. Obiectu ColorBlend va memora x culori si x pozitii. Acestea se vor intorduce ulterior in brush, prin .InterpolationColors. In final, poligonul va fi umplut cu forma aleasa.
+Pasi: se creeaza obiectul PathGradientPath. Obiectul ColorBlend va memora x culori si x pozitii. Acestea se vor intorduce ulterior in brush, prin .InterpolationColors. In final, poligonul va fi umplut cu forma aleasa.
 
 
 
