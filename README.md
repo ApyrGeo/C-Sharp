@@ -1031,6 +1031,39 @@ e.Graphics.FillPolygon(brush, romania.ToArray());
 
 Pasi: se creeaza obiectul PathGradientPath. Obiectul ColorBlend va memora x culori si x pozitii. Acestea se vor intorduce ulterior in brush, prin .InterpolationColors. In final, poligonul va fi umplut cu forma aleasa.
 
+### Lucru cu mai multe fisiere dintr-un folder
+
+```cs
+var files = new DirectoryInfo(@"Imagini\").GetFiles();
+
+//ex
+pictureBox1.BackgroundImage=Image.FromFile(files[3]);
+```
+### Deschidere alta aplicatie
+
+```cs
+var p=Process.Start("Vacante.txt");
+p.WaitForExit(); //opreste aplicatia pana se inchide programul deschis
+```
+
+### Salvare elemente(filtru,extensii...)
+
+Exemplu:
+
+```cs
+Bitmap mp = new Bitmap(pictureBox1.Width, pictureBox1.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+pictureBox1.DrawToBitmap(mp,new Rectangle(0,0,pictureBox1.Width,pictureBox1.Height));
+
+SaveFileDialog sv=new SaveFileDialog();
+sv.FileName = "Poster"; 
+sv.Filter = "|*.png"; 
+sv.ShowDialog();
+if (sv.FileName!=null)
+{
+    mp.Save(sv.FileName,ImageFormat.Png);
+}
+```
+Filtrarea ia forma: "text|*.extensie1|text2|*.extensie2"
 
 
 
