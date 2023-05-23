@@ -1,0 +1,11 @@
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe.config
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.pdb
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csproj.AssemblyReference.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csproj.SuggestedBindingRedirects.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.Form1.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.Properties.Resources.resources
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csproj.GenerateResource.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csproj.CoreCompileInputs.cache
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.exe
+C:\Users\geose\OneDrive\Desktop\Olimpiada C#\ONTI\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.pdb
