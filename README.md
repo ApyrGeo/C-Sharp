@@ -1066,5 +1066,28 @@ if (sv.FileName!=null)
 Filtrarea ia forma: "text|*.extensie1|text2|*.extensie2"
 
 
+### TableLayoutPanel
+
+```cs
+
+this.tableLayoutPanel1.RowStyles.Clear();
+this.tableLayoutPanel1.ColumnStyles.Clear();
+
+tableLayoutPanel1.ColumnCount++; //adaugare coloana
+            for (int i = 1; i <= this.tableLayoutPanel1.ColumnCount; i++)
+            {
+                tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 1));
+            }
+            for (int i = 0; i < tableLayoutPanel1.RowCount; i++)
+            {
+                tableLayoutPanel1.Controls.Add(new Control());
+            }
+            
+ TextBox a=new TextBox(); //adaugare obiect intr-o celula
+            a.Multiline = true;
+            a.Dock= DockStyle.Fill;
+            tableLayoutPanel1.Controls.Add(a, celula_selectata.j, celula_selectata.i);           
+
+```
 
 
