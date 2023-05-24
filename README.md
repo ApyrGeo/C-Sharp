@@ -1042,6 +1042,8 @@ pictureBox1.BackgroundImage=Image.FromFile(files[3]);
 ### Deschidere alta aplicatie
 
 ```cs
+//using System.Diagnostics;
+
 var p=Process.Start("Vacante.txt");
 p.WaitForExit(); //opreste aplicatia pana se inchide programul deschis
 ```
@@ -1089,5 +1091,10 @@ tableLayoutPanel1.ColumnCount++; //adaugare coloana
             tableLayoutPanel1.Controls.Add(a, celula_selectata.j, celula_selectata.i);           
 
 ```
-
+### Play sound
+```cs
+//using System.Media....
+System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
+player.Play();
+```
 
